@@ -2,92 +2,117 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon CV</title>
+    <title>Florian Siguret Curriculum vitæ</title>
+    <link rel="icon" href="img/bookmark-regular.svg">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="https://kit.fontawesome.com/8ef03f3d97.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-    <h1>Florian Siguret</h1>
-    <h2>Développeur web freelance</h2>
+<header class="header">
+    <img class="myface" src="img/matete.png" alt="My head">
+    <h1 class="name"><span class="name-color">Florian</span> Siguret</h1>
+    <h2 class="job-name">Développeur web freelance</h2>
 </header>
-<main>
-    <section>
-        <h2>Formation</h2>
+<main class="main">
+    <aside class="aside-left">
         <aside>
-            <ul>
-                <li>2020</li>
+            <h2 class="aside-title">Contact</h2>
+            <ul class="contact-list">
+                <li class="list-contact">Adresse<span class="return">Oizon, France</span></li>
+                <li class="list-contact phone">Téléphone<span class="return">07 60 07 63 97</span></li>
+                <li class="list-contact mail">Email<span class="return">fl.si@orange.fr</span></li>
+                <li class="list-contact github">Github<span class="return">https://github.com/fsiguret</span></li>
             </ul>
         </aside>
-        <article>
-            <h3>Openclassrooms</h3>
-            <h4>Developpeur web</h4>
-            <p>
+        <article class="about-me">
+            <h2 class="aside-title">À propos de moi</h2>
+            <p class="text-me">
+                Passionné par l'informatique et la technologie en général, je passe mon temps à rechercher de nouvelles
+                façons d'optimiser ce que je fais tout les jours. Réceptif aux critiques constructives, je fais tout ce qui
+                est en mon pouvoir pour m'améliorer de jour en jour.
+            </p>
+        </article>
+        <aside class="hobbies">
+            <h2 class="aside-title">Loisirs</h2>
+            <i class="fas fa-leaf img leaf"></i>
+            <i class="fas fa-car-side img car"></i>
+            <i class="fas fa-tv img tv"></i>
+        </aside>
+    </aside>
+    <section class="flex-section training">
+        <header class="header-section">
+            <i class="fas fa-book"></i>
+            <h2 class="section-title">Formation</h2>
+        </header>
+        <article class="article-train">
+            <ul class="last-date fa-ul">
+                <li><span class="fa-li"><i class="far fa-dot-circle"></i></span><span class="date">2020<span class="return">Toulouse</span></span></li>
+            </ul>
+
+            <h3 class="article-title">Openclassrooms</h3>
+            <h4 class="article-subtitle">Développeur web</h4>
+            <p class="article-text">
                 Formation en ligne constituée de plusieurs projets à réaliser, suivi d'une soutenance en visioconférence.
                 D'une durée de 6 mois, cette formation nous met en situations professionelle face à des clients fictifs.
             </p>
         </article>
-        <aside>
-            <ul>
-                <li>2017 Bourges</li>
+
+        <article class="article-train">
+            <ul class="list-date fa-ul">
+                <li><span class="fa-li"><i class="fas fa-circle"></i></span><span class="date">2017<span class="return">Bourges</span></span></li>
             </ul>
-        </aside>
-        <article>
-            <h3>EGEE</h3>
-            <h4>Développeur web junior</h4>
-            <p>
+            <h3 class="article-title">EGEE</h3>
+            <h4 class="article-subtitle">Développeur web junior</h4>
+            <p class="article-text">
                 Formation dite de "classe inversée" les élèves reçoivent des cours
                 sous forme de ressources en ligne (en général des vidéos) qu'ils vont pouvoir regarder
                 chez eux à la place des devoirs.
             </p>
-        </article>
-        <aside>
-            <ul>
-                <li>2012 Bourges</li>
+</article>
+        <article class="article-train">
+            <ul class="list-date fa-ul">
+                <li><span class="fa-li"><i class="fas fa-circle"></i></span><span class="date">2012 <span class="return">Bourges</span></span></li>
             </ul>
-        </aside>
-        <article>
-            <h3>Niveau Baccalauréat</h3>
-            <h4>Conduite et Gestion Exploitation Agricole (CGEA)</h4>
-            <p>
+            <h3 class="article-title">Niveau Baccalauréat</h3>
+            <h4 class="article-subtitle">Conduite et Gestion Exploitation Agricole (CGEA)</h4>
+            <p class="article-text">
                 Baccalauréat profesionnel, option Production végétale (PV).
             </p>
         </article>
     </section>
-    <section>
-        <h2>Expérience professionelle</h2>
-        <aside>
-            <ul>
-                <li>2018-2019 AUBIGNY SUR NERE</li>
+    <section class="flex-section">
+        <header class="header-section">
+            <i class="fas fa-suitcase"></i>
+            <h2 class="section-title">Expérience professionelle</h2>
+        </header>
+        <article class="article-xp">
+            <ul class="last-date fa-ul">
+                <li><span class="fa-li"><i class="far fa-dot-circle"></i></span><span class="date">2018 - 2019<span class="return">Aubigny</span></span></li>
             </ul>
-        </aside>
-        <article>
-            <h3>Coopérative AXEREAL</h3>
-            <h4>Agent exploitation silo</h4>
-            <ul>
+            <h3 class="article-title">Coopérative AXEREAL</h3>
+            <h4 class="article-subtitle">Agent exploitation silo</h4>
+            <ul class="article-text">
                 <li>Remplacement du responsable du site</li>
                 <li>Chargement des camions et livraisons à domicile</li>
                 <li>Calibrage du grain à la réception.</li>
                 <li>Utilisation des outils informatique.</li>
             </ul>
         </article>
-        <aside>
-            <ul>
-                <li>2017 BOURGES</li>
+        <article class="article-xp">
+            <ul class="list-date fa-ul">
+                <li><span class="fa-li"><i class="fas fa-circle"></i></span><span class="date">2017<span class="return">Bourges</span></span></li>
             </ul>
-        </aside>
-        <article>
-            <h3>Enjoy Your Business</h3>
-            <h4>Stagiaire Développeur Php/Symfony </h4>
-            <p>Développement d'une fonction de support en ligne implémenté dans l'application web.</p>
+            <h3 class="article-title">Enjoy Your Business</h3>
+            <h4 class="article-subtitle">Stagiaire Développeur Php/Symfony </h4>
+            <p class="article-text">Développement d'une fonction de support en ligne implémenté dans l'application web.</p>
         </article>
-        <aside>
-            <ul>
-                <li>2015 LEVROUX</li>
+        <article class="article-xp">
+            <ul class="fa-ul list-date">
+                <li><span class="fa-li"><i class="fas fa-circle"></i></span><span class="date">2015<span class="return">Levroux</span></span></li>
             </ul>
-        </aside>
-        <article>
-            <h3>Pc Micro Service</h3>
-            <h4>Réparateur informatique</h4>
-            <ul>
+            <h3 class="article-title">Pc Micro Service</h3>
+            <h4 class="article-subtitle">Réparateur informatique</h4>
+            <ul class="article-text">
                 <li>Réparation système.</li>
                 <li>Diagnostic des pannes.</li>
                 <li>Changement de pièces</li>
@@ -95,43 +120,28 @@
             </ul>
         </article>
     </section>
-    <section>
-        <h2>Compétences</h2>
-        <ul>
-            <li>(logo here insert from css) HTML5</li>
-            <li>(logo here insert from css) CSS3</li>
-            <li>(logo here insert from css)Javascript</li>
-            <li>(logo here insert from css) Node.js</li>
-        </ul>
+    <section class="flex-section reco-section">
+        <header class="header-section">
+            <i class="fas fa-pencil-alt"></i>
+            <h2 class="section-title">Recommandations</h2>
+        </header>
+        <article class="reco">
+            <h4 class="article-name">Maxime Kieman</h4>
+            <ul class="list-reco">
+                <li class="reco-name reco-list">Directeur, Mon agence</li>
+                <li class="reco-tel reco-list">Téléphone :</li>
+                <li class="reco-email reco-list">Email : name@email.com</li>
+            </ul>
+        </article>
+        <article class="reco">
+            <h4 class="article-name">Maxime Kieman</h4>
+            <ul class="list-reco">
+                <li class="reco-name reco-list">Directeur, Mon agence</li>
+                <li class="reco-tel reco-list">Téléphone :</li>
+                <li class="reco-email reco-list">Email : name@email.com</li>
+            </ul>
+        </article>
     </section>
 </main>
-<footer>
-    <aside>
-        <img src="#" alt="My Face in image. insert from CSS">
-    </aside>
-    <aside>
-        <h2>Contact</h2>
-        <p>Adresse Oizon, France</p>
-        <p>Téléphone 07 60 07 63 97</p>
-        <p>Email fl.si@orange.fr</p>
-        <p>Github https://github.com/fsiguret</p>
-    </aside>
-    <aside>
-        <h2>à propos de moi</h2>
-        <p>
-            Passionné par l'informatique et la technologie en général, je passe mon temps à rechercher de nouvelles
-            façons d'optimiser ce que je fais tout les jours. Réceptif aux critiques constructives, je fais tout ce qui
-            est en mon pouvoir pour m'améliorer de jour en jour.
-        </p>
-    </aside>
-    <aside>
-        <h2>Loisirs</h2>
-        <figure>
-            <img src="#" alt="hobbies img insert from CSS">
-            <img src="#" alt="hobbies img insert from CSS">
-            <img src="#" alt="hobbies img insert from CSS">
-        </figure>
-    </aside>
-</footer>
 </body>
 </html>
