@@ -2,8 +2,12 @@
 VARIABLE
  ******/
 :root {
+    /*Material Color Blue Grey 400 for background, titles footer, underline*/
     --back-color : #78909C;
+    /*Material Color Grey 800 for text and background titles footer*/
     --text-color : #424242;
+    /*Material Color Blue Grey 700 for border on image*/
+    --border-color : #455A64;
 }
 /******
 GENERAL
@@ -57,7 +61,7 @@ HEADER
 }
 .myface {
     border-radius: 50%;
-    border: solid #556D7E;
+    border: solid var(--border-color);
     width: 9rem;
     height: 9rem;
     margin: 3rem auto 1rem auto;
@@ -112,8 +116,8 @@ MAIN
 /*block header section*/
 .header-section {
     width: 85%;
-    margin: auto 2.25rem 0.6rem 3.75rem;
-    padding-bottom: 1rem;
+    margin: 1rem 2.25rem 0.6rem 3.75rem;
+    padding-bottom: 0.75rem;
     border-bottom: var(--back-color) solid 2px;
 }
 /*icon fontawesome*/
@@ -124,7 +128,7 @@ MAIN
 }
 .section-title {
     text-transform: uppercase;
-    width: 70%;
+    width: 100%;
     margin: auto auto auto 2rem;
 }
 /*Block article right*/
@@ -134,7 +138,7 @@ MAIN
     justify-content: space-between;
 }
 /*list on block article right*/
-ul.fa-ul {
+.fa-ul {
     margin-left: 5rem;
 }
 .list-date, .last-date {
@@ -278,39 +282,42 @@ FOOTER
 .tv::before{
     top: 0.63rem;
 }
-@media (max-width: 1600px) {
+@media all and (max-width: 1600px) {
     body {
         width: 60%;
     }
 }
-@media (max-width: 1350px) {
+@media all and (max-width: 1350px) {
     body {
         width: 70%;
     }
 }
-@media (max-width: 1150px) {
+@media all and (max-width: 1150px) {
     body {
         width: 80%;
     }
 }
-@media (max-width: 1010px) {
+@media all and (max-width: 1010px) {
     body {
         width: 90%;
     }
 }
-@media (max-width: 920px) {
+@media all and (max-width: 920px) {
     body {
         width: 100%;
         box-shadow: none;
         margin: 0;
     }
 }
-@media (max-width: 810px) {
+@media all and (max-width: 810px) {
     html {
         font-size: 80%;
     }
 }
-@media (max-width: 680px) {
+@media all and (max-width: 680px) {
+    html {
+        font-size: 100%;
+    }
     /*****
     HEADER
     *****/
