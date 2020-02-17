@@ -6,6 +6,8 @@ VARIABLE
     --back-color : #78909C;
     /*Material Color Grey 800 for text and background titles footer*/
     --text-color : #424242;
+    /*Material Color : Grey 300*/
+    --backtitle-color : #E0E0E0;
     /*Material Color Blue Grey 700 for border on image*/
     --border-color : #455A64;
 }
@@ -223,7 +225,7 @@ FOOTER
     color: var(--back-color);
     height: 2.2rem;
     text-align: center;
-    background: var(--text-color);
+    background: var(--backtitle-color);
     padding-top: 0.3rem;
 }
 /*block address*/
