@@ -4,8 +4,10 @@ VARIABLE
 :root {
     /*Material Color Blue Grey 400 for background, titles footer, underline*/
     --back-color : #78909C;
-    /*Material Color Grey 800 for text and background titles footer*/
+    /*Material Color Grey 800 for text main*/
     --text-color : #424242;
+    /*Colo text footer*/
+    --textfooter-color : white;
     /*Material Color : Grey 300*/
     --backtitle-color : #E0E0E0;
     /*Material Color Blue Grey 700 for border on image*/
@@ -227,6 +229,9 @@ FOOTER
     text-align: center;
     background: var(--backtitle-color);
     padding-top: 0.3rem;
+}
+.text-me, .contact-list, .link {
+    color: var(--textfooter-color);
 }
 /*block address*/
 .address {
