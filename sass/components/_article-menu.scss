@@ -1,0 +1,40 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.article-menu {
+  &__header {
+    @include display($flex);
+    margin: 2.5rem 2.5rem;
+    h3 {
+      margin: 0 auto;
+      &::after {
+        content: "";
+        display: block;
+        border-bottom: solid 2px;
+        width: 100%;
+        max-width: 0;
+        transition: max-width, 200ms linear;
+
+      }
+      &:hover:after {
+        max-width: 100%;
+      }
+
+    }
+  }
+  &__list {
+    text-align: left;
+    list-style: none;
+    margin-right: 2.5rem;
+    li {
+      @include display($flex);
+      width: 100%;
+      margin-bottom: 1.3rem;
+    }
+    span {
+      text-align: right;
+      flex-grow: 1;
+      font-weight: bold;
+    }
+  }
+}

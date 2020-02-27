@@ -1,0 +1,23 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.main {
+  @include display($flex, $wrapped, $content-center);
+  text-align: center;
+  &__title {
+    width: nth($width-size, 5);
+    margin-top: 4rem;
+  }
+  .section-menu {
+    box-shadow: $box-shadow;
+    margin-bottom: 3rem;
+    width: nth($width-size, 5);
+    > h2 {
+       margin: 0.5rem 0 4rem 0;
+     }
+    &__footer {
+      margin-top: 3.5rem;
+    }
+  }
+}

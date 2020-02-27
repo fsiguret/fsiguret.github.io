@@ -1,0 +1,33 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+.section-menu {
+  background-color: nth($color-menu, 1);
+  color : nth($colorTextButtonMenu,1);
+  .article-menu {
+    font-family: nth($font,1);
+  }
+  &__header {
+    font-family: nth($fontNameMenu,1), sans-serif;
+    font-size: 1.5rem;
+    img {
+      margin-top: 3rem;
+      width: 10%;
+      height: 10%;
+    }
+    h3 {
+      margin-top: 0;
+    }
+  }
+  &__footer {
+    font-family: nth($fontNameMenu,1), sans-serif;
+    font-size: 1.5rem;
+    @include display($flex, $default-wrap, $content-center);
+    margin-bottom: 3.5rem;
+    img {
+      width: 5%;
+      height: 5%;
+      margin: auto 1rem auto 0;
+    }
+  }
+}

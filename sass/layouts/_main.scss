@@ -1,0 +1,46 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.main {
+  margin: 7% 10%;
+  @include display($flex, $wrapped, $content-center);
+  @include mobileOnly($mobileSize) {
+    margin: 7% 0;
+    flex-direction: column;
+  }
+  .shortly{
+  margin: nth($margin-size, 2);
+  background-color: $background-color;
+  color: $color-text;
+  border-radius: 12px;
+  text-align: center;
+  width: nth($width-size, 3);
+
+    &:hover {
+      span {
+        -webkit-animation: bounce 0.3s infinite alternate;
+        @include animSuspension(3);
+      }
+    }
+
+    &__text {
+      font-size: nth($font-size, 2);
+      margin: nth($margin-size, 3) auto;
+      @include mobileOnly($mobileSize) {
+        font-size: nth($fontSizeMobile, 1);
+      }
+      span {
+        position: relative;
+        top : 0.1px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes bounce {
+  100% {
+    top: -10px;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.section-menu {
+  background-color: #fdfffd;
+  &__header {
+    font-family: nth($fontNameMenu,4);
+    @include gradientText(to right, nth($colorGradMenu4,1), nth($colorGradMenu4,2));
+    font-size: nth($menu4FontSize, 1);
+    margin: 6rem auto;
+  }
+  .article-menu {
+    font-family: nth($font,1);
+    &__header {
+      .left {
+        transform: scaleX(-1);
+      }
+      img {
+        width: 37%;
+        height: 50%;
+        margin: auto 0;
+      }
+      h3{
+        font-size: nth($menu4FontSize, 2);
+        font-weight: normal;
+      }
+    }
+    &__list {
+      margin: 0 4rem 3rem 5rem;
+      @include mobileOnly($mobileSize) {
+        margin: 0 2rem 3rem 1rem;
+      }
+      font-size: nth($menu4FontSize, 3);
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
