@@ -1,0 +1,37 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.section-menu {
+  background-color: nth($color-menu,2);
+  font-family: "Croisant One", serif;
+  &__header {
+    @include gradientText(to right, nth($colorGradMenu2,1), nth($colorGradMenu2,2));
+    margin: 6rem auto;
+    font-family: "Croissant One", serif;
+    font-size: nth($menu2FontSize,1);
+  }
+
+  .article-menu {
+    @include colorText($colorTextMenu2);
+    &__header {
+      margin: 2.5rem 0;
+      img {
+        width: 33%;
+        height: 50%;
+      }
+      .right {
+        transform: scaleX(-1);
+      }
+    }
+    &__list {
+      margin : 0 8rem 4rem 5rem;
+      @include mobileOnly($mobileSize) {
+        margin : 0 2rem 4rem 1rem;
+      }
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+}

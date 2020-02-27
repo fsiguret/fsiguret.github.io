@@ -1,0 +1,19 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.main {
+  padding: 1rem;
+  &__title {
+    text-align: center;
+  }
+  .article-mentions {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

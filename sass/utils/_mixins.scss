@@ -1,0 +1,85 @@
+@import "variables";
+@import "lists";
+@import "maps";
+
+@mixin display($display : $flex, $wrap : $default-wrap, $justify-content : $flex-start, $flex-dir : $default-flexdir) {
+  display: $display;
+  @if ($display == $flex) {
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+    flex-direction: $flex-dir;
+  }
+}
+
+@mixin gradientText($dir, $color, $color2) {
+  background: linear-gradient($dir, $color, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin colorMenu($colorList) {
+  @for $i from 1 through length($colorList) {
+    &__#{$i} {
+      background-color: nth($colorList, $i);
+    }
+  }
+}
+
+@mixin colorText($colorList) {
+  @for $i from 1 through length($colorList) {
+    &--#{$i} {
+      color: nth($colorList, $i);
+    }
+  }
+}
+
+@mixin responsive() {
+  @each $key, $value in $breakpoint {
+      @media screen and (max-width: map-get($value, size)) {
+        width: map_get($value, width);
+      }
+  }
+}
+
+@mixin mobileOnly($mobileSize) {
+    @media screen and (max-width: $mobileSize){
+      @content;
+    }
+}
+
+@mixin buttonText($font,$serif, $size) {
+  font-family: $font, $serif;
+  font-size: $size;
+}
+
+@mixin decoButton($sizeTitle, $sizeText) {
+  @for $i from 1 through $nbArticle {
+    &__#{$i} {
+      background-color: nth($color-menu, $i);
+      color : nth($colorTextButtonMenu, $i);
+      font-family: nth($fontNameMenu, $i);
+      font-size: $sizeTitle;
+      p {
+        @if ($i != 2) {
+          font-family: nth($font,1), sans-serif;
+        } @else {
+          font-family: nth($font,2), serif;
+        }
+        @if ($i == 1) {
+          text-transform: uppercase;
+        }
+        font-size: $sizeText;
+      }
+    }
+  }
+}
+
+@mixin animSuspension($nbPoint) {
+  @for $i from 1 through $nbPoint {
+    &:nth-child(#{$i}) {
+      @each $key, $value in $mapDelay {
+        -webkit-animation-delay: map-get($value, $i);
+      }
+    }
+  }
+}
