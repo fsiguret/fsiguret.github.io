@@ -79,12 +79,15 @@ a {
   margin-top: 3.5rem;
 }
 
+.article-menu {
+  margin-bottom: 3rem;
+}
 .article-menu__header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   flex-direction: row;
-  margin: 2.5rem 2.5rem;
+  margin: 2.5rem 2.5rem 1rem 2.5rem;
 }
 .article-menu__header h3 {
   margin: 0 auto;
@@ -92,7 +95,7 @@ a {
 .article-menu__header h3::after {
   content: "";
   display: block;
-  border-bottom: solid 2px;
+  border-bottom: solid 1px;
   width: 100%;
   max-width: 0;
   transition: max-width, 200ms linear;
@@ -111,7 +114,7 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 .article-menu__list span {
   text-align: right;
@@ -124,10 +127,10 @@ a {
 }
 .section-menu__header {
   font-family: "Kaushan Script";
-  background: linear-gradient(to right, #72bf56, #C0D673);
+  background: linear-gradient(to right, #41963c, #bcfd7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin: 6rem auto;
 }
 .section-menu .article-menu {
@@ -146,7 +149,7 @@ a {
   font-weight: normal;
 }
 .section-menu .article-menu__list {
-  margin: 0 4rem 3rem 5rem;
+  margin: 0 3.9rem 3rem 3.5rem;
   font-size: 0.9rem;
 }
 @media screen and (max-width: 599px) {
@@ -155,7 +158,7 @@ a {
   }
 }
 .section-menu .article-menu__list li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .footer {

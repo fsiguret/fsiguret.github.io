@@ -203,17 +203,17 @@ a {
   margin: 0;
 }
 .menu .article__2 h2 {
-  background: linear-gradient(to right, #c16800, #9966FF);
+  background: linear-gradient(to right, #FF8C00, #9966FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu .article__3 h2 {
-  background: linear-gradient(to right, #274E9D, #13a8fb);
+  background: linear-gradient(to right, #0000CD, #00BFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu .article__4 h2 {
-  background: linear-gradient(to right, #72bf56, #C0D673);
+  background: linear-gradient(to right, #41963c, #bcfd7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

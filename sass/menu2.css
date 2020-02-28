@@ -79,12 +79,15 @@ a {
   margin-top: 3.5rem;
 }
 
+.article-menu {
+  margin-bottom: 3rem;
+}
 .article-menu__header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   flex-direction: row;
-  margin: 2.5rem 2.5rem;
+  margin: 2.5rem 2.5rem 1rem 2.5rem;
 }
 .article-menu__header h3 {
   margin: 0 auto;
@@ -92,7 +95,7 @@ a {
 .article-menu__header h3::after {
   content: "";
   display: block;
-  border-bottom: solid 2px;
+  border-bottom: solid 1px;
   width: 100%;
   max-width: 0;
   transition: max-width, 200ms linear;
@@ -111,7 +114,7 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 .article-menu__list span {
   text-align: right;
@@ -124,12 +127,12 @@ a {
   font-family: "Croisant One", serif;
 }
 .section-menu__header {
-  background: linear-gradient(to right, #c16800, #9966FF);
+  background: linear-gradient(to right, #FF8C00, #9966FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 6rem auto;
   font-family: "Croissant One", serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 .section-menu .article-menu--1 {
   color: #c16800;
@@ -160,6 +163,7 @@ a {
 }
 .section-menu .article-menu__list span {
   font-weight: normal;
+  font-size: 1.1rem;
 }
 
 .footer {

@@ -2,24 +2,23 @@
 @import "../utils/mixins";
 
 .article-menu {
+  margin-bottom: 3rem;
   &__header {
     @include display($flex);
-    margin: 2.5rem 2.5rem;
+    margin: 2.5rem 2.5rem 1rem 2.5rem;
     h3 {
       margin: 0 auto;
       &::after {
         content: "";
         display: block;
-        border-bottom: solid 2px;
+        border-bottom: solid 1px;
         width: 100%;
         max-width: 0;
         transition: max-width, 200ms linear;
-
       }
       &:hover:after {
         max-width: 100%;
       }
-
     }
   }
   &__list {
@@ -29,7 +28,7 @@
     li {
       @include display($flex);
       width: 100%;
-      margin-bottom: 1.3rem;
+      margin-bottom: 1.2rem;
     }
     span {
       text-align: right;
